@@ -1,11 +1,44 @@
 :root {
-    --bgColor: #d68008;
+    --bgColor: #f3b051;
+    --bgColo1: #df9021;
+    --bgColo2: #f3b051;;
+    --bgcolorBox: rgb(10, 10, 10);
+}
+h1 {
+    font-size: 4rem;
 }
 body{
-    background-color: var(--bgColor);
+    background: linear-gradient(to right, var(--bgColor), var(--bgColo1), var(--bgColo2) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    color: #fff;
+    width: 500px;
+    height: 180px;
+    border:none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, .89);
+}
+
+.box{
+    margin:10px;
+    background-color: var(--bgcolorBox);
+    width: 120px;
+    height: 140px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
