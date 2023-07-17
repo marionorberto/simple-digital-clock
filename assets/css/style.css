@@ -1,3 +1,4 @@
+
 :root {
     --bgColor: #f3b051;
     --bgColo1: #df9021;
@@ -13,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
 }
 *{
     padding: 0;
