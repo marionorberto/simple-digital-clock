@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Clock</a></li>
+            <li><a href="timer.html">Timer</a></li>
+            <li><a href="alarm.html">alarm</a></li>
+        </ul>
+    </nav>
+    
+   <!-- Adicionar um novo alarme: -->
+    <div class="new-Alarm">
+        <h1 id="txt-add">Adicionar novo Alarm</h1>
+        <input type="time" name="time" value="12:00" id="time">
+        <div class="alarm-name">
+            <img  id="img-alarm" src="assets/img/task.png" alt="">
+            <input id="input-alarme" type="text" value="alarme(1)">
+        </div>
+        <div id="repetir-alarme">
+            <div class="checkbox-repetir-alarme">
+                <input type="checkbox" name="checkbox" id="input-repetir">
+                <label id="label-repetir-alarme" for="checkbox">Repetir alarme</label>
+            </div>
+                <ul id="dias-semana">
+                    <li class="li-dias-semana">seg</li>
+                    <li class="li-dias-semana">ter</li>
+                    <li class="li-dias-semana">qua</li>
+                    <li class="li-dias-semana">qui</li>
+                    <li class="li-dias-semana">sex</li>
+                    <li class="li-dias-semana">sab</li>
+                    <li class="li-dias-semana">dom</li>
+                </ul>
+        </div>
+
+        <div>
+           
+            <div>
+                <img id="img-song" src="assets/img/music-icon.png" alt="musical icon">
+                <select name="song" id="song">
+                    <option value="tubos">noisy</option>
+                    <option value="tubos">slowly</option>
+                    <option value="tubos">ranger</option>
+                    <option value="tubos">speed</option>
+                    <option value="tubos">beauty</option>
+                    <option value="tubos">melancoly</option>
+                </select>
+            </div>
+            <div>
+                <img id="img-sino" src="assets/img/sino.png" alt="alert icon">
+                <select name="interval" id="interval">
+                    <option value="10 minutos">10 minutos</option>
+                    <option value="10 minutos">15 minutos</option>
+                    <option value="10 minutos">20 minutos</option>
+                    <option value="10 minutos">25 minutos</option>
+                    <option value="10 minutos">30 minutos</option>
+                    <option value="10 minutos">35 minutos</option>
+                    <option value="10 minutos">40 minutos</option>
+                    <option value="10 minutos">45 minutos</option>
+                    <option value="10 minutos">50 minutos</option>
+                    <option value="10 minutos">55 minutos</option>
+                    <option value="10 minutos">1 hora</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div id="save-cancel">
+                <button id="save">save</button>
+                <button id="cancel">cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- icone de add novo alarme: -->
+    <div class="add-alarm">
+        <img class="add" src="/assets/img/icons8_pencil_26px.png" alt="pencil">
+        <img class="pencil" src="/assets/img/icons8_plus_math_24px.png" alt="plus-sinal">
+    </div>
+</body>
+</html>

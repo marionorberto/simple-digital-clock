@@ -8,12 +8,9 @@
 }
 
 :root {
-    /* --bgColor: #f222d3;
-    --bgColo1: #781b84; */
-   
     --bgColor2: #5b76ed;
     --bgColor3: #0c6d3c;
- --bgcolorBox: rgb(0, 0, 0, .90);
+    --bgcolorBox: rgb(0, 0, 0, .90);
 }
 h1 {
     font-size: 5rem;
@@ -34,6 +31,7 @@ ul{
     display: flex;
     gap: 70px;
 }
+
 a{
     color:#FFF;
     font-family: 'Poppins2';
@@ -50,9 +48,14 @@ a::before{
     width: 0%;
     transition: 0.2s linear;
 }
-a:hover::before{
+a:hover::before, a:active::before{
     width: 100%;
     left:0;
+}
+a:active{
+    width: 100%;
+    left:0;
+    color: #3373ab;
 }
 a:hover{
     color: #3373ab;
@@ -66,25 +69,45 @@ a:hover{
 }
 .container {
     display: flex;
+    flex-direction: column;
     justify-content:  space-around;
     align-items: center;
     color: #fff;
-    width: 600px;
-    height: 230px;
+    width: 500px;
+    height: 200px;
     border:none;
     border-radius: 6px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.8);
     background-color:transparent;
     margin: 160px auto;
 }
-.box{
-    margin:20px;
-    background-color: var(--bgcolorBox);
-    width: 130px;
-    height: 150px;
+.display{
     display: flex;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.8);
+}
+.options{
+    margin-top: -60px; 
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    color: #fff;
+    font-family: 'Poppins';
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: 1px solid rgb(37, 35, 35);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px  rgb(0, 0, 0, 0.8);
+}
+.btn:hover{
+    color: black;
+    background-color: #fff;
+    outline: #3373ab;
+}
+.pause{
+    color: rgb(172, 41, 41);
+}
+.timer {
+    
 }
