@@ -6,7 +6,10 @@
     font-family: 'Poppins2';
     src: url('/assets/fonts/Poppins/Poppins-Medium.ttf');
 }
-
+@font-face{
+    font-family: 'Poppins3';
+    src: url('/assets/fonts/Poppins/Poppins-Light.ttf');
+}
 :root {
     --bgColor2: #5b76ed;
     --bgColor3: #0c6d3c;
@@ -86,7 +89,7 @@ a:hover{
 #txt-add{
     font-size: 1.4rem;
 }
-#time{
+.time{
     border: none;
     cursor: pointer;
     outline: none;
@@ -101,26 +104,26 @@ a:hover{
     margin-top: 10px;
     align-items: center;
 }
-#input-alarme{
+.input-alarme{
     padding: 3px;
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(79, 148, 227);
 }
-#input-repetir{
+.input-repetir{
     cursor: pointer;
 }
-#repetir-alarme{
+.repetir-alarme{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#label-repetir-alarme{
+.label-repetir-alarme{
     font-family: 'Poppins';
     font-weight: 200;
 }
-#dias-semana{
+.dias-semana{
     display: flex;
     gap: 10px;
     margin: 10px;
@@ -134,15 +137,12 @@ a:hover{
     outline: 1px solid #5b76ed;
     cursor: pointer;
 }
-.li-dias-semana:active{
-    background-color:#5b76ed;
-    color:  #fff;
-}
+
 .li-dias-semana:hover{
     background-color: rgb(0, 0, 0, 0.5);
 }
 /* notes: */
-#save, #cancel{
+.save, .cancel{
     color: #fff;
     background-color: #5b76ed;
     padding: 5px;
@@ -152,11 +152,11 @@ a:hover{
     height: 30px;
     cursor: pointer;
 }
-#save:hover, #cancel:hover{
+.save:hover, .cancel:hover{
     color: #dad7d7;
     background-color: #3e50a0;
 }
-#save-cancel{
+.save-cancel{
     display: flex;
     gap: 10px;
     margin: 10px;
@@ -181,7 +181,7 @@ a:hover{
     height: 20px;
     cursor: pointer;
 }
-.pencil{
+.add{
     border-radius: 50%;
     outline: 1px solid #3373ab;
     cursor: pointer;
@@ -195,18 +195,39 @@ a:hover{
     border-radius: 5px;
     padding: 2px;
 }
-#img-alarm{
+.img-alarm{
     cursor: pointer;
 }
-#img-alarm:active{
+.img-alarm:active{
     background-color: rgb(0, 0, 0, 0.3);
 }
-#img-sino, #img-song{
+.img-sino, .img-song{
     width: 14px;
     height: 14px;
 }
-#song, #interval{
+.song, .interval{
     width: 200px;
     border: none;
     outline: none;
+}
+.diaMarcado {
+    background-color: #0c6d3c;
+}
+.s-v-single{
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.s-v-time{
+    font-size: 2.9rem;
+}
+.s-v-description{
+    font-size: .8rem;
+    font-family: 'Poppins3';
+}
+.s-v-finished{
+    color:#0a1130;
 }
